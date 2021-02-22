@@ -1,0 +1,9 @@
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Infra\bin\Debug\netcoreapp3.1\Infra.deps.json
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Infra\bin\Debug\netcoreapp3.1\Infra.dll
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Infra\bin\Debug\netcoreapp3.1\Infra.pdb
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Infra\obj\Debug\netcoreapp3.1\Infra.csprojAssemblyReference.cache
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Infra\obj\Debug\netcoreapp3.1\Infra.csproj.CoreCompileInputs.cache
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Infra\obj\Debug\netcoreapp3.1\Infra.AssemblyInfoInputs.cache
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Infra\obj\Debug\netcoreapp3.1\Infra.AssemblyInfo.cs
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Infra\obj\Debug\netcoreapp3.1\Infra.dll
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Infra\obj\Debug\netcoreapp3.1\Infra.pdb

@@ -1,0 +1,164 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Flunt/1.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        }
+      },
+      "Flunt.Br/1.4.1": {
+        "type": "package",
+        "dependencies": {
+          "Flunt": "1.0.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/Flunt.Br.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flunt.Br.dll": {}
+        }
+      },
+      "Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Entidades": "1.0.0",
+          "Flunt.Br": "1.4.1"
+        },
+        "compile": {
+          "bin/placeholder/Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Dominio.dll": {}
+        }
+      },
+      "Entidades/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Flunt.Br": "1.4.1"
+        },
+        "compile": {
+          "bin/placeholder/Entidades.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entidades.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Flunt/1.0.4": {
+      "sha512": "zsKA3Wol1+UeQBYtXuO56+ua6DBUpD5dcp3iAa86W5WcMLOWBMaDXKdqIrrLNgQUOW/U/svecb4ldgqwnC9XDQ==",
+      "type": "package",
+      "path": "flunt/1.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flunt.1.0.4.nupkg.sha512",
+        "flunt.nuspec",
+        "lib/netstandard2.0/Flunt.dll"
+      ]
+    },
+    "Flunt.Br/1.4.1": {
+      "sha512": "iItaWrug7VcLMWG4c5JySTZK0U4lCmgobF2UDntqb1tq622TE/mH104QI3aRIAPFY6/ev2b3ZYnloTxmnaU1Lg==",
+      "type": "package",
+      "path": "flunt.br/1.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flunt-icon-br_compressed.png",
+        "flunt.br.1.4.1.nupkg.sha512",
+        "flunt.br.nuspec",
+        "lib/netstandard2.0/Flunt.Br.dll"
+      ]
+    },
+    "Dominio/1.0.0": {
+      "type": "project",
+      "path": "../Dominio/Dominio.csproj",
+      "msbuildProject": "../Dominio/Dominio.csproj"
+    },
+    "Entidades/1.0.0": {
+      "type": "project",
+      "path": "../Entidades/Entidades.csproj",
+      "msbuildProject": "../Entidades/Entidades.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Dominio >= 1.0.0",
+      "Entidades >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\grobi\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\AplicacaoApp\\AplicacaoApp.csproj",
+      "projectName": "AplicacaoApp",
+      "projectPath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\AplicacaoApp\\AplicacaoApp.csproj",
+      "packagesPath": "C:\\Users\\grobi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\AplicacaoApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\grobi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Dominio\\Dominio.csproj": {
+              "projectPath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Dominio\\Dominio.csproj"
+            },
+            "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

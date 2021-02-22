@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Xsq5LaZa4qwkdVlk0dj7S66KoOx3vbs3AtZh+rQQB805+ocfYGzi8PoH2c/8lwxGRlczOii58c1emTp/KmflIg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Dominio\\Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\grobi\\.nuget\\packages\\flunt\\1.0.4\\flunt.1.0.4.nupkg.sha512",
+    "C:\\Users\\grobi\\.nuget\\packages\\flunt.br\\1.4.1\\flunt.br.1.4.1.nupkg.sha512"
+  ],
+  "logs": []
+}
