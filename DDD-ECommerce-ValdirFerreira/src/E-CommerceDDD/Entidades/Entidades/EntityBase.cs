@@ -2,7 +2,7 @@
 using Flunt.Validations;
 using System;
 
-namespace Entidades.Entidades
+namespace Entidades
 {
     public class EntityBase : Notifiable, IValidatable
     {

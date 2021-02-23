@@ -9,3 +9,15 @@ C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\DDD-ECommerce-ValdirFerreir
 C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Dominio\bin\Debug\netcoreapp3.1\Entidades.dll
 C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Dominio\bin\Debug\netcoreapp3.1\Entidades.pdb
 C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Dominio\obj\Debug\netcoreapp3.1\Dominio.csproj.CopyComplete
+C:\Users\Ivory\Desktop\DemosHelpers\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Dominio\bin\Debug\netcoreapp3.1\Dominio.deps.json
+C:\Users\Ivory\Desktop\DemosHelpers\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Dominio\bin\Debug\netcoreapp3.1\Dominio.dll
+C:\Users\Ivory\Desktop\DemosHelpers\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Dominio\bin\Debug\netcoreapp3.1\Dominio.pdb
+C:\Users\Ivory\Desktop\DemosHelpers\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Dominio\bin\Debug\netcoreapp3.1\Entidades.dll
+C:\Users\Ivory\Desktop\DemosHelpers\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Dominio\bin\Debug\netcoreapp3.1\Entidades.pdb
+C:\Users\Ivory\Desktop\DemosHelpers\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Dominio\obj\Debug\netcoreapp3.1\Dominio.csprojAssemblyReference.cache
+C:\Users\Ivory\Desktop\DemosHelpers\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Dominio\obj\Debug\netcoreapp3.1\Dominio.AssemblyInfoInputs.cache
+C:\Users\Ivory\Desktop\DemosHelpers\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Dominio\obj\Debug\netcoreapp3.1\Dominio.AssemblyInfo.cs
+C:\Users\Ivory\Desktop\DemosHelpers\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Dominio\obj\Debug\netcoreapp3.1\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Ivory\Desktop\DemosHelpers\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Dominio\obj\Debug\netcoreapp3.1\Dominio.csproj.CopyComplete
+C:\Users\Ivory\Desktop\DemosHelpers\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Dominio\obj\Debug\netcoreapp3.1\Dominio.dll
+C:\Users\Ivory\Desktop\DemosHelpers\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\Dominio\obj\Debug\netcoreapp3.1\Dominio.pdb

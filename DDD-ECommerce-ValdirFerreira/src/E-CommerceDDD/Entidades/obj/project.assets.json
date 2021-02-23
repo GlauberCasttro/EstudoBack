@@ -58,23 +58,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\grobi\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Ivory\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj",
+      "projectUniqueName": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj",
       "projectName": "Entidades",
-      "projectPath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj",
-      "packagesPath": "C:\\Users\\grobi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\obj\\",
+      "projectPath": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj",
+      "packagesPath": "C:\\Users\\Ivory\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\grobi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ivory\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -86,6 +82,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -97,6 +94,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Flunt.Br": {
             "target": "Package",
@@ -118,7 +116,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

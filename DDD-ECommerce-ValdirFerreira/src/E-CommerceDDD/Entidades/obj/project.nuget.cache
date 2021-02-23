@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "XjF4lYWEupAobLURzv1bvlSkbRpP2VnqjIwb7afk3E/uVgT5fFSPqzD2No9swgev3PESTW1t4MRiZGGcE/qDOQ==",
+  "dgSpecHash": "HzIz0ewE4mxNiYbMvGbvjoNshqEIKG7zUUcwqfDT4pB7RmCOZpHmOtSK9ZCcDgKuFTGKx+BYFflGaYObd5ecUw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj",
+  "projectFilePath": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\grobi\\.nuget\\packages\\flunt\\1.0.4\\flunt.1.0.4.nupkg.sha512",
-    "C:\\Users\\grobi\\.nuget\\packages\\flunt.br\\1.4.1\\flunt.br.1.4.1.nupkg.sha512"
+    "C:\\Users\\Ivory\\.nuget\\packages\\flunt\\1.0.4\\flunt.1.0.4.nupkg.sha512",
+    "C:\\Users\\Ivory\\.nuget\\packages\\flunt.br\\1.4.1\\flunt.br.1.4.1.nupkg.sha512"
   ],
   "logs": []
 }
