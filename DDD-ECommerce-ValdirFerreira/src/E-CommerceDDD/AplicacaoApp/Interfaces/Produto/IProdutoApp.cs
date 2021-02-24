@@ -1,5 +1,5 @@
 ﻿using AplicacaoApp.Interfaces.GenericsApp;
-using Entidades.Entidades;
+using Entidades;
 using System.Threading.Tasks;
 
 namespace AplicacaoApp.Interfaces

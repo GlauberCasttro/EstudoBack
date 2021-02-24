@@ -1,4 +1,4 @@
-﻿using Entidades.Entidades;
+﻿using Entidades;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infra.Configuration
@@ -18,6 +18,8 @@ namespace Infra.Configuration
                 builder.UseSqlServer(GetStringConnectionConfig());
                 base.OnConfiguring(builder);
             }
+
+            base.OnConfiguring(builder);
         }
 
         private string GetStringConnectionConfig()

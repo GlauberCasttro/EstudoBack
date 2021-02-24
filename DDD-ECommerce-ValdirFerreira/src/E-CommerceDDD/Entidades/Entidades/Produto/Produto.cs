@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Entidades.Entidades
+namespace Entidades
 {
     [Table("Produtos")]
     public class Produto : EntityBase
@@ -23,10 +23,10 @@ namespace Entidades.Entidades
         [Display(Name = "Situação")]
         public bool Situacao { get; set; }
 
-        public override void Validate()
-        {
-            AddNotifications(new Contract()
-                .IsNotNullOrEmpty(Nome, "Nome", "O nome do produto é obrigatório"));
-        }
+        //public override void Validate()
+        //{
+        //    AddNotifications(new Contract()
+        //        .IsNotNullOrEmpty(Nome, "Nome", "O nome do produto é obrigatório"));
+        //}
     }
 }

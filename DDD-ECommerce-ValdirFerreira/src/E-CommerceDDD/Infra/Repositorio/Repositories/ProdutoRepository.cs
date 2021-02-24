@@ -1,5 +1,5 @@
 ﻿using Dominio.Interfaces.Produtos;
-using Entidades.Entidades;
+using Entidades;
 
 namespace Infra.Repositorio
 {

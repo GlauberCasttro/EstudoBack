@@ -1,10 +1,7 @@
 ﻿using Dominio.Interfaces.Produtos;
 using Dominio.Interfaces.Services;
-using Entidades.Entidades;
+using Entidades;
 using Flunt.Notifications;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Dominio.Services
@@ -18,11 +15,11 @@ namespace Dominio.Services
         }
         public async Task AdicionarProduto(Produto produto)
         {
-            if (produto.Invalid)
-            {
-                AddNotifications(produto.Notifications);
-                return;
-            }
+            //if (produto.Invalid)
+            //{
+            //    AddNotifications(produto.Notifications);
+            //    return;
+            //}
 
             produto.Situacao = true;
             await _Iproduto.Adicionar(produto);
@@ -30,13 +27,13 @@ namespace Dominio.Services
 
         public async Task AtualizarProduto(Produto produto)
         {
-            //  var validaNome = produto.ValidaPropriedadeString(produto.Nome, "Nome");
-            //  var validaValor = produto.ValidarPropriedadeDecimal(produto.Valor, "Valor");
+            //var validaNome = produto.ValidaPropriedadeString(produto.Nome, "Nome");
+            //var validaValor = produto.ValidarPropriedadeDecimal(produto.Valor, "Valor");
 
             //if (validaNome && validaValor)
             //{
-            //    await _Iproduto.Atualizar(produto);
-            //}
+                await _Iproduto.Atualizar(produto);
+          //  }
         }
     }
 }

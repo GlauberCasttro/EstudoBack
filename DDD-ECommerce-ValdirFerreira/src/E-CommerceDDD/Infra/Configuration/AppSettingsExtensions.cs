@@ -15,7 +15,7 @@ namespace Celig.Infra.Configuration
         /// <returns>Coleção de serviços da aplicação.</returns>
         public static IServiceCollection AddConfiguration(this IServiceCollection services, IConfiguration configuration)
         {
-            services.Configure<StringConexaoOptions>(configuration.GetSection(StringConexaoOptions.StringConexao));      
+            services.Configure<StringConexaoOptions>(configuration.GetSection(StringConexaoOptions.StringConexao));
             return services;
         }
     }

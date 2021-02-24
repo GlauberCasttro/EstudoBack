@@ -1,4 +1,4 @@
-﻿using Entidades.Entidades;
+﻿using Entidades;
 using Flunt.Notifications;
 using System.Collections.Generic;
 using System.Threading.Tasks;

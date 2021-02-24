@@ -1,7 +1,7 @@
 ﻿using AplicacaoApp.Interfaces;
 using Dominio.Interfaces.Produtos;
 using Dominio.Interfaces.Services;
-using Entidades.Entidades;
+using Entidades;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

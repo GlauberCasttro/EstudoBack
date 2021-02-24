@@ -1,5 +1,5 @@
 ﻿using Dominio.Interfaces.Generics;
-using Entidades.Entidades;
+using Entidades;
 
 namespace Dominio.Interfaces.Produtos
 {
