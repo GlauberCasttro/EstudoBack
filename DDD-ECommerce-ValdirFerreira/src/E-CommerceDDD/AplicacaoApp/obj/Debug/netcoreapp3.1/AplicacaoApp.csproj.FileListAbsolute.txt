@@ -26,3 +26,6 @@ C:\Users\Ivory\Desktop\DemosHelpers\CursosBack\EstudoBack\DDD-ECommerce-ValdirFe
 C:\Users\Ivory\Desktop\DemosHelpers\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\obj\Debug\netcoreapp3.1\AplicacaoApp.csproj.CopyComplete
 C:\Users\Ivory\Desktop\DemosHelpers\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\obj\Debug\netcoreapp3.1\AplicacaoApp.dll
 C:\Users\Ivory\Desktop\DemosHelpers\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\obj\Debug\netcoreapp3.1\AplicacaoApp.pdb
+C:\Users\Ivory\Desktop\DemosHelpers\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\bin\Debug\netcoreapp3.1\AplicacaoApp.runtimeconfig.json
+C:\Users\Ivory\Desktop\DemosHelpers\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\bin\Debug\netcoreapp3.1\AplicacaoApp.runtimeconfig.dev.json
+C:\Users\Ivory\Desktop\DemosHelpers\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\obj\Debug\netcoreapp3.1\AplicacaoApp.genruntimeconfig.cache

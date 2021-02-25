@@ -1,9 +1,10 @@
 ﻿using Entidades;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infra.Configuration
 {
-    public class ContextBase : DbContext
+    public class ContextBase : IdentityDbContext<Usuario>
     {
         public ContextBase(DbContextOptions<ContextBase> options) : base(options)
         {
@@ -15,7 +16,7 @@ namespace Infra.Configuration
         {
             if (!builder.IsConfigured)
             {
-                builder.UseSqlServer(GetStringConnectionConfig());
+                //builder.UseSqlServer(GetStringConnectionConfig());
                 base.OnConfiguring(builder);
             }
 
@@ -28,5 +29,6 @@ namespace Infra.Configuration
         }
 
         public DbSet<Produto> Produtos { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
     }
 }
