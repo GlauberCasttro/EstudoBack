@@ -4,11 +4,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Entidades.Notifications
+namespace Entidades
 {
     public class UsuarioValidation : Notifiable, IValidatable
     {
-        public Usuario Usuario { get; set; }
+        private Usuario Usuario { get; set; }
         public UsuarioValidation(Usuario usuario)
         {
             Usuario = usuario;

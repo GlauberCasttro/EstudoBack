@@ -6,6 +6,7 @@ using System.Text;
 
 namespace Entidades.Entidades
 {
+    [Table("ComprasUsuario")]
     public class CompraUsuario : EntityBase
     {
         [Display(Name = "Produto")]
@@ -15,10 +16,9 @@ namespace Entidades.Entidades
         [Display(Name ="Situação Compra")]
         public SituacaoCompra Situacao { get; set; }
 
-        [ForeignKey("Usuario")]
         [Display(Name ="Usuário")]
         public Usuario Usuario { get; set; }
-        public string UserId { get; set; }
+        public string UsuarioId { get; set; }
         public int Quantidade { get; set; }
     }
 }
