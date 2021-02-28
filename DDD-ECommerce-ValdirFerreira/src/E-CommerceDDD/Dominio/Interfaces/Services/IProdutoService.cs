@@ -12,5 +12,6 @@ namespace Dominio.Interfaces.Services
         IReadOnlyCollection<Notification> Notifications { get; }
         Task AdicionarProduto(Produto produto);
         Task AtualizarProduto(Produto produto);
+        Task<IList<Produto>> Listar();
     }
 }

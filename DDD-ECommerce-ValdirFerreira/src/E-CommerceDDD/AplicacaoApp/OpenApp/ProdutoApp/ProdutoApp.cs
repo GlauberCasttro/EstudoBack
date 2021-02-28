@@ -2,18 +2,19 @@
 using Dominio.Interfaces.Produtos;
 using Dominio.Interfaces.Services;
 using Entidades;
+using Flunt.Notifications;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace AplicacaoApp.OpenApp
 {
-    public class ProdutoApp : IProdutoApp
+    public class ProdutoApp : Notifiable, IProdutoApp
     {
-        private readonly IProduto _produto;
+        private readonly IProdutoRepository _produto;
         private readonly IProdutoService _produtoService;
 
-        public ProdutoApp(IProduto produto, IProdutoService produtoService)
+        public ProdutoApp(IProdutoRepository produto, IProdutoService produtoService)
         {
             _produto = produto;
             _produtoService = produtoService;
@@ -26,6 +27,11 @@ namespace AplicacaoApp.OpenApp
         public async Task AdicionarProduto(Produto produto)
         {
             await _produtoService.AdicionarProduto(produto);
+
+            if (_produtoService.Invalid)
+            {
+                AddNotifications(_produtoService.Notifications);
+            }
         }
         public async Task AtualizarProduto(Produto produto)
         {
@@ -37,9 +43,9 @@ namespace AplicacaoApp.OpenApp
             await _produto.Atualizar(objeto);
         }
 
-        public Task<List<Produto>> Listar()
+        public async Task<IList<Produto>> Listar()
         {
-            return _produto.Listar();
+            return await _produtoService.Listar();
         }
 
         public async Task<Produto> ObterPorId(Guid id)

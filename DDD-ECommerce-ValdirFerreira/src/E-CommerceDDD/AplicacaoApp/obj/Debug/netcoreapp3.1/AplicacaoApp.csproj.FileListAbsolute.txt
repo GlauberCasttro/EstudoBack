@@ -29,3 +29,20 @@ C:\Users\Ivory\Desktop\DemosHelpers\CursosBack\EstudoBack\DDD-ECommerce-ValdirFe
 C:\Users\Ivory\Desktop\DemosHelpers\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\obj\Debug\netcoreapp3.1\AplicacaoApp.dll
 C:\Users\Ivory\Desktop\DemosHelpers\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\obj\Debug\netcoreapp3.1\AplicacaoApp.pdb
 C:\Users\Ivory\Desktop\DemosHelpers\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\obj\Debug\netcoreapp3.1\AplicacaoApp.genruntimeconfig.cache
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\bin\Debug\netcoreapp3.1\AplicacaoApp.deps.json
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\bin\Debug\netcoreapp3.1\AplicacaoApp.runtimeconfig.json
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\bin\Debug\netcoreapp3.1\AplicacaoApp.runtimeconfig.dev.json
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\bin\Debug\netcoreapp3.1\AplicacaoApp.dll
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\bin\Debug\netcoreapp3.1\AplicacaoApp.pdb
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\bin\Debug\netcoreapp3.1\Dominio.dll
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\bin\Debug\netcoreapp3.1\Entidades.dll
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\bin\Debug\netcoreapp3.1\Dominio.pdb
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\bin\Debug\netcoreapp3.1\Entidades.pdb
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\obj\Debug\netcoreapp3.1\AplicacaoApp.csprojAssemblyReference.cache
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\obj\Debug\netcoreapp3.1\AplicacaoApp.AssemblyInfoInputs.cache
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\obj\Debug\netcoreapp3.1\AplicacaoApp.AssemblyInfo.cs
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\obj\Debug\netcoreapp3.1\AplicacaoApp.csproj.CoreCompileInputs.cache
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\obj\Debug\netcoreapp3.1\AplicacaoApp.csproj.CopyComplete
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\obj\Debug\netcoreapp3.1\AplicacaoApp.dll
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\obj\Debug\netcoreapp3.1\AplicacaoApp.pdb
+C:\Users\grobi\OneDrive\Área de Trabalho\CursosBack\EstudoBack\DDD-ECommerce-ValdirFerreira\src\E-CommerceDDD\AplicacaoApp\obj\Debug\netcoreapp3.1\AplicacaoApp.genruntimeconfig.cache

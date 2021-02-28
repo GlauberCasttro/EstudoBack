@@ -1,25 +1,12 @@
-using AplicacaoApp.Interfaces;
-using AplicacaoApp.OpenApp;
-using Dominio.Interfaces.Generics;
-using Dominio.Interfaces.Produtos;
-using Dominio.Interfaces.Services;
-using Dominio.Services;
-using Infra.Configuration;
-using Infra.Repositorio;
+using Celig.Infra.Configuration;
+using Infrastructure.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using WebEcommerce.Data;
+using WebEcommerce.Configuration;
 
 namespace WebEcommerce
 {
@@ -35,31 +22,19 @@ namespace WebEcommerce
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            #region CONTEXTOS DA APLICACAO E CONFIGURACAO IDENTITY
-            //string de conexão da aplicação
-            services.AddDbContext<ContextBase>(options => options.UseSqlServer(Configuration["StringConexao:Padrao"]));
 
-            //configuração do identity
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ContextBase>();
-            services.AddControllersWithViews();
-            services.AddRazorPages();
-
-            #endregion
-
-            #region INJECAO DE DEPENDCIA DA APLICAÇÃO
-            // INTERFACE REPOSITORIO
-            services.AddTransient(typeof(IGenerics<>), typeof(RepositoryGenerics<>));
-            services.AddTransient<IProduto, ProdutoRepository>();
+            //services.AddDbContext<ContextBase>(options =>
+            //    options.UseSqlServer(Configuration.GetConnectionString("Padrao")));
 
 
-            //INTERFACE APLICACAO
-            services.AddTransient<IProdutoApp, ProdutoApp>();
 
 
-            //SERVICO DO DOMINIO//
-            services.AddTransient<IProdutoService, ProdutoService>();
-            #endregion
+
+            //services.AddDbContext<ContextBase>(options => options.UseSqlServer("Padrao"));
+
+            
+            services.InjecaoDeDependencia(Configuration);
+            services.AddConfiguration(Configuration);
 
         }
 

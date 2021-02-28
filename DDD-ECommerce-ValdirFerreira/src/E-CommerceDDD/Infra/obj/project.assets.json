@@ -5663,28 +5663,32 @@
     ".NETCoreApp,Version=v3.1": [
       "Dominio >= 1.0.0",
       "Entidades >= 1.0.0",
-      "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.6",
       "Microsoft.EntityFrameworkCore >= 3.1.6",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.6",
+      "Microsoft.EntityFrameworkCore.Relational >= 3.1.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.6",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.6",
       "Microsoft.Extensions.Options.ConfigurationExtensions >= 3.1.6"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ivory\\.nuget\\packages\\": {}
+    "C:\\Users\\grobi\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Infra\\Infra.csproj",
+      "projectUniqueName": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Infra\\Infra.csproj",
       "projectName": "Infra",
-      "projectPath": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Infra\\Infra.csproj",
-      "packagesPath": "C:\\Users\\Ivory\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Infra\\obj\\",
+      "projectPath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Infra\\Infra.csproj",
+      "packagesPath": "C:\\Users\\grobi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Infra\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Ivory\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\grobi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5698,11 +5702,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Dominio\\Dominio.csproj": {
-              "projectPath": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Dominio\\Dominio.csproj"
+            "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Dominio\\Dominio.csproj": {
+              "projectPath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Dominio\\Dominio.csproj"
             },
-            "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj"
+            "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj"
             }
           }
         }
@@ -5717,10 +5721,6 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[3.1.6, )"
-          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[3.1.6, )"
@@ -5728,6 +5728,10 @@
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.1.6, )"
+          },
+          "Microsoft.EntityFrameworkCore.Relational": {
             "target": "Package",
             "version": "[3.1.6, )"
           },
@@ -5761,7 +5765,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Infra\\Infra.csproj": {}
+    "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Infra\\Infra.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Dominio\\Dominio.csproj",
-        "packagesPath": "C:\\Users\\Ivory\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Dominio\\obj\\",
+        "projectPath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Dominio\\Dominio.csproj",
+        "packagesPath": "C:\\Users\\grobi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Ivory\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\grobi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +31,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj"
+              "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -64,21 +67,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj",
-        "packagesPath": "C:\\Users\\Ivory\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\obj\\",
+        "projectPath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj",
+        "packagesPath": "C:\\Users\\grobi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Ivory\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\grobi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -138,21 +144,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Infra\\Infra.csproj": {
+    "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Infra\\Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Infra\\Infra.csproj",
+        "projectUniqueName": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Infra\\Infra.csproj",
         "projectName": "Infra",
-        "projectPath": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Infra\\Infra.csproj",
-        "packagesPath": "C:\\Users\\Ivory\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Infra\\obj\\",
+        "projectPath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Infra\\Infra.csproj",
+        "packagesPath": "C:\\Users\\grobi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Infra\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Ivory\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\grobi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -166,11 +175,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Dominio\\Dominio.csproj"
+              "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Dominio\\Dominio.csproj"
               },
-              "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj"
+              "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -185,10 +194,6 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[3.1.6, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.6, )"
@@ -196,6 +201,10 @@
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
               "version": "[3.1.6, )"
             },
@@ -229,7 +238,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
