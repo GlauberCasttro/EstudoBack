@@ -1,4 +1,6 @@
+using DevIo.Business.Interfaces.Repositories;
 using DevIo.Data.Contexto;
+using DevIo.Data.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -30,6 +32,16 @@ namespace DevIo.App
 
             services.AddDbContext<AplicacaoContext>(op =>
                 op.UseSqlServer(Configuration.GetConnectionString("Padrao")));
+
+
+
+            services.AddScoped<AplicacaoContext>();
+            services.AddScoped<IProdutoRepository, ProdutoRepository>();
+            services.AddScoped<IFornecedorRepository, FornecedorRepository>();
+            services.AddScoped<IEnderecoRepository, EnderecoRepository>();
+
+
+
 
             services.AddControllersWithViews();
         }
