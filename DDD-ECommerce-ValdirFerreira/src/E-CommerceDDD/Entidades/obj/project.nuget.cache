@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "P0fsclgqTab1pe66HifJ1cdC/eVWBqEZWzyoAZ5DHKnjtJct6MRblC3Srg3SymYmJLE8qx51DwiYx2A5P17X+g==",
+=======
   "dgSpecHash": "bPvrBamNkkxMBdar9XdT6D6919p0mcXsdpkaXr6Bg7bDxys8Iolr+KJlavai1m3QkxkwOMrRXr2aK4SF7KaEIQ==",
+>>>>>>> 5f792bba4048d0989bcde286ce351dd4b2c0a592
   "success": true,
   "projectFilePath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj",
   "expectedPackageFiles": [

@@ -46,5 +46,10 @@ namespace Entidades
         //}
         #endregion
 
+        public void AtivarProduto()
+        {
+            Situacao = true;
+        }
+
     }
 }

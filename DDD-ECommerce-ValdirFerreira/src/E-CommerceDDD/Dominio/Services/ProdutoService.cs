@@ -26,10 +26,15 @@ namespace Dominio.Services
                 return;
             }
 
+<<<<<<< HEAD
+            produto.AtivarProduto();
+            await _Iproduto.Adicionar(produto);
+=======
 
 
             produto.Situacao = true;
             await _produto.Adicionar(produto);
+>>>>>>> 5f792bba4048d0989bcde286ce351dd4b2c0a592
         }
 
 

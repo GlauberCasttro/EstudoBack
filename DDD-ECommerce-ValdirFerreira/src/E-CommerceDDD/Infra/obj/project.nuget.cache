@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "/DQv8SNJ0eKv5OfsIxWZV97bqPuKYAYJ9Pnnc3svTnf84Ouox7fNAnCx2a8hH19AwCZg1udg5DW8viWwl/Nsmw==",
+=======
   "dgSpecHash": "3342wyDwqvXcvWSPPpMStZwAwQhiBblMphkvTkmUZ1rG60F3iLxBZIFvvWqiWBVpPjnN5BhMryxp2lxv1ZEmbA==",
+>>>>>>> 5f792bba4048d0989bcde286ce351dd4b2c0a592
   "success": true,
   "projectFilePath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Infra\\Infra.csproj",
   "expectedPackageFiles": [
