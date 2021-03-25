@@ -1,9 +1,9 @@
-﻿using Flunt.Notifications;
+﻿using Entidades.Validations;
 using Flunt.Validations;
 
 namespace Entidades
 {
-    public class ProdutoValidation : Notifiable, IValidatable
+    public class ProdutoValidation : EntityValidation, IValidatable
     {
         private Produto Produto { get; set; }
         public ProdutoValidation(Produto produto)
@@ -12,9 +12,9 @@ namespace Entidades
         }
         public void Validate()
         {
-            AddNotifications(
-                 new Contract()
-                  .HasMaxLengthIfNotNullOrEmpty(Produto.Nome, 255, "Nome", $"O campo nome não pode conter mais que 255 caracteres"));
+            AddNotifications(new Contract()
+                .IsLowerThanExtension(Produto.QuantidadeEstoque, 0, "Quantidade Estoque", "Não é possivel ter um produto com estoque 0"
+                ));
         }
     }
 }

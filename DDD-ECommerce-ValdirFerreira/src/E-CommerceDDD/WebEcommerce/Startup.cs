@@ -22,18 +22,10 @@ namespace WebEcommerce
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            //services.AddDbContext<ContextBase>(options =>
-            //    options.UseSqlServer(Configuration.GetConnectionString("Padrao")));
-
-
-
-
-
-            //services.AddDbContext<ContextBase>(options => options.UseSqlServer("Padrao"));
-
-            
+            //Adiciona as Injecoes de deoendencia da aplicação
             services.InjecaoDeDependencia(Configuration);
+
+            //Adiciona as configurações da aplicação do appSettings para um objeto fortemente tipado
             services.AddConfiguration(Configuration);
 
         }

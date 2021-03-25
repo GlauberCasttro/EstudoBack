@@ -21,10 +21,10 @@ namespace WebEcommerce.Configuration
             //string de conexão da aplicação
 
             services.AddDbContext<ContextBase>(options => options.UseSqlServer(Configuration["StringConexao:Padrao"]));
-            
+
             services.AddScoped<ContextBase>();
 
-            //configuração do identity
+            //configuração do identity para usuarios da apliacação
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ContextBase>();
             services.AddControllersWithViews();
@@ -32,10 +32,11 @@ namespace WebEcommerce.Configuration
 
             #endregion
             #region INJECAO DE DEPENDCIA DA APLICAÇÃO
+           
+            
             // INTERFACE REPOSITORIO
            // services.AddTransient(typeof(IGenerics<>), typeof(RepositoryGenerics<>));
             services.AddTransient<IProdutoRepository, ProdutoRepository>();
-
 
             //INTERFACE APLICACAO
             services.AddTransient<IProdutoApp, ProdutoApp>();

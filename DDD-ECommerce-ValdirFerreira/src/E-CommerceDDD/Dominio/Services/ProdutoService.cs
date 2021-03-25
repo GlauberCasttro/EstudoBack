@@ -20,8 +20,6 @@ namespace Dominio.Services
         public async Task AdicionarProduto(Produto produto)
         {
             ValidarProduto(produto);
-
-
             if (_produtoValidation.Invalid)
             {
                 AddNotifications(_produtoValidation.Notifications);
@@ -34,26 +32,29 @@ namespace Dominio.Services
             await _produto.Adicionar(produto);
         }
 
-        private void ValidarProduto(Produto produto)
-        {
-            _produtoValidation = new ProdutoValidation(produto);
-            _produtoValidation.Validate();
-        }
 
         public async Task AtualizarProduto(Produto produto)
         {
-            //var validaNome = produto.ValidaPropriedadeString(produto.Nome, "Nome");
-            //var validaValor = produto.ValidarPropriedadeDecimal(produto.Valor, "Valor");
 
-            //if (validaNome && validaValor)
-            //{
+            ValidarProduto(produto);
+            if (_produtoValidation.Invalid)
+            {
+                AddNotifications(_produtoValidation.Notifications);
+                return;
+            }
+
             await _produto.Atualizar(produto);
-            //  }
+
         }
 
         public async Task<IList<Produto>> Listar()
         {
             return await _produto.Listar();
+        }
+        private void ValidarProduto(Produto produto)
+        {
+            _produtoValidation = new ProdutoValidation(produto);
+            _produtoValidation.Validate();
         }
     }
 }
