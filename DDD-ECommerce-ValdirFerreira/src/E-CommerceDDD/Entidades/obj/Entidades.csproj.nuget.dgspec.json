@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj": {}
+    "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj",
-        "packagesPath": "C:\\Users\\Ivory\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ivory\\Desktop\\DemosHelpers\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\obj\\",
+        "projectPath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\Entidades.csproj",
+        "packagesPath": "C:\\Users\\grobi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\grobi\\OneDrive\\Área de Trabalho\\CursosBack\\EstudoBack\\DDD-ECommerce-ValdirFerreira\\src\\E-CommerceDDD\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Ivory\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\grobi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Flunt.Notifications;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,9 @@ namespace AplicacaoApp.Interfaces.GenericsApp
         Task Atualizar(T objeto);
         Task Remover(T objeto);
         Task<T> ObterPorId(Guid id);
-        Task<List<T>> Listar();
+        Task<IList<T>> Listar();
+        IReadOnlyCollection<Notification> Notifications { get; }
+        bool Valid { get; }
+        bool Invalid { get; }
     }
 }

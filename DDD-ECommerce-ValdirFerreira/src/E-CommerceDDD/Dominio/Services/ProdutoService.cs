@@ -3,17 +3,19 @@ using Dominio.Interfaces.Services;
 using Entidades;
 using Flunt.Notifications;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Dominio.Services
 {
     public class ProdutoService : Notifiable, IProdutoService
     {
-        private readonly IProduto _Iproduto;
+        private readonly IProdutoRepository _produto;
         private ProdutoValidation _produtoValidation;
-        public ProdutoService(IProduto produto)
+
+        public ProdutoService(IProdutoRepository produto)
         {
-            _Iproduto = produto;
+            _produto = produto;
         }
         public async Task AdicionarProduto(Produto produto)
         {
@@ -22,11 +24,19 @@ namespace Dominio.Services
 
             if (_produtoValidation.Invalid)
             {
+                AddNotifications(_produtoValidation.Notifications);
                 return;
             }
 
+<<<<<<< HEAD
             produto.AtivarProduto();
             await _Iproduto.Adicionar(produto);
+=======
+
+
+            produto.Situacao = true;
+            await _produto.Adicionar(produto);
+>>>>>>> 5f792bba4048d0989bcde286ce351dd4b2c0a592
         }
 
         private void ValidarProduto(Produto produto)
@@ -42,8 +52,13 @@ namespace Dominio.Services
 
             //if (validaNome && validaValor)
             //{
-            await _Iproduto.Atualizar(produto);
+            await _produto.Atualizar(produto);
             //  }
+        }
+
+        public async Task<IList<Produto>> Listar()
+        {
+            return await _produto.Listar();
         }
     }
 }

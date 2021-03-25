@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Dominio.Interfaces.Generics
 {
-    public interface IGenerics<T> where T : EntityBase
+    public interface IGenerics<T> where T : class
     {
         Task Adicionar(T Object);
         Task Atualizar(T Object);

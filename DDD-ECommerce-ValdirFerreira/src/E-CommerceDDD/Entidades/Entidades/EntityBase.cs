@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Entidades
 {
-    public class EntityBase 
+    public abstract class EntityBase 
     {
         [Key]
         public Guid Id { get; set; }

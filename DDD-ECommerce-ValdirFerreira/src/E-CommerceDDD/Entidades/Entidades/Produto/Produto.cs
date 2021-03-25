@@ -1,4 +1,5 @@
-﻿using Flunt.Validations;
+﻿using Entities.Entities;
+using Flunt.Validations;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -34,8 +35,8 @@ namespace Entidades
         public string Observacao { get; set; }
 
         [Display(Name = "Usuário")]
-        public virtual Usuario Usuario { get; set; }
-        public string UserId { get; set; }
+        public virtual ApplicationUser ApplicationUser { get; set; }
+        public string ApplicationUserId { get; set; }
 
         #region MyRegion
         //public override void Validate()

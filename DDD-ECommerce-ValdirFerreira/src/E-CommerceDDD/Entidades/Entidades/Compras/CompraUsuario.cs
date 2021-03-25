@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -6,7 +7,7 @@ using System.Text;
 
 namespace Entidades.Entidades
 {
-    [Table("ComprasUsuario")]
+    [Table("UsuarioCompras")]
     public class CompraUsuario : EntityBase
     {
         [Display(Name = "Produto")]
@@ -17,7 +18,7 @@ namespace Entidades.Entidades
         public SituacaoCompra Situacao { get; set; }
 
         [Display(Name ="Usuário")]
-        public Usuario Usuario { get; set; }
+        public ApplicationUser Usuario { get; set; }
         public string UsuarioId { get; set; }
         public int Quantidade { get; set; }
     }

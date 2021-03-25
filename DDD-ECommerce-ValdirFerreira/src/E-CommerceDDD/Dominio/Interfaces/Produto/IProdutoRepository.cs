@@ -3,7 +3,7 @@ using Entidades;
 
 namespace Dominio.Interfaces.Produtos
 {
-    public interface IProduto : IGenerics<Produto>
+    public interface IProdutoRepository : IGenerics<Produto>
     {
     }
 }

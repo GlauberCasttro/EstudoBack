@@ -1,4 +1,5 @@
-﻿using Flunt.Notifications;
+﻿using Entities.Entities;
+using Flunt.Notifications;
 using Flunt.Validations;
 using System;
 using System.Collections.Generic;
@@ -8,8 +9,8 @@ namespace Entidades
 {
     public class UsuarioValidation : Notifiable, IValidatable
     {
-        private Usuario Usuario { get; set; }
-        public UsuarioValidation(Usuario usuario)
+        private ApplicationUser Usuario { get; set; }
+        public UsuarioValidation(ApplicationUser usuario)
         {
             Usuario = usuario;
         }

@@ -1,68 +1,67 @@
 ﻿using Dominio.Interfaces.Generics;
-using Entidades;
-using Infra.Configuration;
+using Infrastructure.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Win32.SafeHandles;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Infra.Repositorio
 {
-    public class RepositoryGenerics<T> : IGenerics<T>, IDisposable where T : EntityBase
+    public class RepositoryGenerics<T> : IGenerics<T>, IDisposable where T : class
     {
-        private readonly DbContextOptions<ContextBase> _contexto;
-        public RepositoryGenerics()
+        private readonly ContextBase _contexto;
+        protected readonly DbSet<T> DbSet;
+        public RepositoryGenerics(ContextBase context)
         {
-            _contexto = new DbContextOptions<ContextBase>();
+            _contexto = context;     
+            DbSet = _contexto.Set<T>();
         }
         public async Task Adicionar(T Object)
         {
-            using (var data = new ContextBase(_contexto))
-            {
-                data.Set<T>().Add(Object);
-                data.Entry(Object).State = EntityState.Added;
-                await data.SaveChangesAsync();
-            }
+            //using (var data = new ContextBase(_contexto))
+            //{
+            //    data.Set<T>().Add(Object);
+            //    data.Entry(Object).State = EntityState.Added;
+            //    await data.SaveChangesAsync();
+            //}
         }
 
         public async Task Atualizar(T Object)
         {
-            using (var data = new ContextBase(_contexto))
-            {
-                data.Set<T>().Update(Object);
-                data.Entry(Object).State = EntityState.Modified;
-                await data.SaveChangesAsync();
-            }
+            //using (var data = new ContextBase(_contexto))
+            //{
+            //    data.Set<T>().Update(Object);
+            //    data.Entry(Object).State = EntityState.Modified;
+            //    await data.SaveChangesAsync();
+            //}
         }
 
         public async Task<List<T>> Listar()
         {
-            using (var data = new ContextBase(_contexto))
-            {
-                return await data.Set<T>().AsNoTracking().ToListAsync();
-            }
+                return await DbSet.AsNoTracking().ToListAsync();
+            
         }
 
         public async Task<T> ObterPorId(Guid Id)
         {
-            using (var data = new ContextBase(_contexto))
-            {
-                return await data.Set<T>().Where(e => e.Id == Id).AsNoTracking().FirstOrDefaultAsync();
-            }
+            //using (var data = new ContextBase(_contexto))
+            //{
+            //    return await data.Set<T>().FindAsync(Id);
+            //}
+
+            return null;
         }
 
         public async Task Remover(T Object)
         {
-            using (var data = new ContextBase(_contexto))
-            {
-                data.Set<T>().Remove(Object);
-                data.Entry(Object).State = EntityState.Deleted;
-                await data.SaveChangesAsync();
-            }
+        //    using (var data = new ContextBase(_contexto))
+        //    {
+        //        data.Set<T>().Remove(Object);
+        //        data.Entry(Object).State = EntityState.Deleted;
+        //        await data.SaveChangesAsync();
+        //    }
         }
 
         #region// Public implementation of Dispose pattern callable by consumers.
