@@ -25,9 +25,7 @@ namespace Dominio.Services
                 return;
             }
 
-
-
-            produto.Situacao = true;
+            produto.AtivarProduto();
             await _Iproduto.Adicionar(produto);
         }
 
