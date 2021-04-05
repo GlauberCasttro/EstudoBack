@@ -1,11 +1,9 @@
-using App.Data;
 using DevIo.Business.Interfaces.Repositories;
-using DevIo.Data;
+using DevIo.Data.Contexto;
 using DevIo.Data.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -32,18 +30,13 @@ namespace App
                 op.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddDbContext<ApplicationDbContext>(options =>
-               options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
-
+            //String de conexao
             services.AddDbContext<AplicacaoContext>(op =>
-            {
-                op.UseSqlServer(Configuration.GetConnectionString("Padrao"));
-            });
-
+                op.UseSqlServer(Configuration.GetConnectionString("Padrao")));
+            //AutoMapper
             services.AddAutoMapper(typeof(Startup));
+
+            services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0);
 
             //Dependencias
             services.AddScoped<AplicacaoContext>();
@@ -51,7 +44,8 @@ namespace App
             services.AddScoped<IFornecedorRepository, FornecedorRepository>();
             services.AddScoped<IEnderecoRepository, EnderecoRepository>();
 
-            services.AddRazorPages();
+
+
             services.AddControllersWithViews();
         }
 
@@ -61,7 +55,6 @@ namespace App
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
             }
             else
             {
@@ -74,7 +67,6 @@ namespace App
 
             app.UseRouting();
 
-            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -82,7 +74,6 @@ namespace App
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
-                endpoints.MapRazorPages();
             });
         }
     }

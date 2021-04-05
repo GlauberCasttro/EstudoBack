@@ -1,11 +1,8 @@
 ﻿using DevIo.Business.Interfaces.Repositories;
 using DevIo.Business.Models;
-using DevIo.Data.Contexto;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace DevIo.Data.Repository

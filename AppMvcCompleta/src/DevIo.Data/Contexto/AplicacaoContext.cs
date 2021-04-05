@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace DevIo.Data.Contexto
+namespace DevIo.Data
 {
     public class AplicacaoContext : DbContext
     {

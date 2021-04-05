@@ -1,6 +1,5 @@
 ﻿using DevIo.Business.Interfaces;
 using DevIo.Business.Models;
-using DevIo.Data.Contexto;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
