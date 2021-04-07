@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevIo.Business.Enums;
+using System;
 
 namespace DevIo.Business.Models
 {
@@ -10,7 +11,7 @@ namespace DevIo.Business.Models
         public string Cep { get; set; }
         public string Bairro { get; set; }
         public string Cidade { get; set; }
-        public string Estado { get; set; }
+        public Estado Estado { get; set; }
         public Guid FornecedorId { get; set; }
         public Fornecedor Fornecedor { get; set; }
     }

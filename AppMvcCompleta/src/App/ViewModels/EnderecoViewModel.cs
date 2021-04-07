@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using DevIo.Business.Enums;
 using Microsoft.AspNetCore.Mvc;
 
 namespace App.ViewModels
@@ -32,8 +33,7 @@ namespace App.ViewModels
         public string Cidade { get; set; }
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
-        [StringLength(50, ErrorMessage = "O campo {0} precisa ter entre {2} e {1} caracteres", MinimumLength = 2)]
-        public string Estado { get; set; }
+        public Estado Estado { get; set; }
 
         [HiddenInput]
         public Guid FornecedorId { get; set; }
