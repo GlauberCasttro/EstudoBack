@@ -14,5 +14,6 @@ namespace DevIo.Business.Interfaces.Repositories
         Task<IEnumerable<Produto>> ObterProdutosPorFornecedor(Guid fornecedorId);
         Task<IEnumerable<Produto>> ObterProdutosFornecedores();
         Task<Produto> ObterProdutoFornecedor(Guid id);
+        Task<IEnumerable<Produto>> ObterProdutoPorNome(string nome);
     }
 }

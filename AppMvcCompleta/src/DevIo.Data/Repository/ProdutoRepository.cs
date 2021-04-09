@@ -10,7 +10,7 @@ namespace DevIo.Data.Repository
 {
     public class ProdutoRepository : Repository<Produto>, IProdutoRepository
     {
-        
+
         public ProdutoRepository(AplicacaoContext context) : base(context)
         {
 
@@ -36,6 +36,11 @@ namespace DevIo.Data.Repository
         public async Task<IEnumerable<Produto>> ObterProdutosPorFornecedor(Guid fornecedorId)
         {
             return await Buscar(p => p.FornecedorId == fornecedorId);
+        }
+
+        public async Task<IEnumerable<Produto>> ObterProdutoPorNome(string nome)
+        {
+            return await _context.Produtos.Include(e => e.Fornecedor).Where(e => e.Nome.Contains(nome)).ToListAsync();
         }
     }
 }

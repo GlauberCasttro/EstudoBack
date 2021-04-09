@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using App.Extensions;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,7 +36,7 @@ namespace App.ViewModels
         public IFormFile ImagemUpload { get; set; }
 
         //--------------DataAnnotations criando para atender as necessidades  dessa aplicação------------------------------------------------------------------
-        // [Moeda]
+        [Moeda]
         [Required(ErrorMessage = "O campo {0} é obrigatorio")]
         public decimal Valor { get; set; }
 
