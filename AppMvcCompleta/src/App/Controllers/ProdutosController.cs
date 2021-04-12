@@ -43,10 +43,9 @@ namespace App.Controllers
             return View("Index", result);
         }
 
-        // GET: Produtos/Details/5
         public async Task<IActionResult> Details(Guid id)
         {
-            var produtoViewModel = ObterProduto(id);
+            var produtoViewModel = await ObterProduto(id);
             if (produtoViewModel == null)
             {
                 return NotFound();

@@ -73,7 +73,7 @@ body {
 input, select, filter, textarea,label {
     max-width: 400px;
 }
-input, td,select{
+/*input, td,select{
     text-transform: uppercase
-}
+}*/
 

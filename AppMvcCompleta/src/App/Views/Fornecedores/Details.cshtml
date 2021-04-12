@@ -1,42 +1,44 @@
 ﻿@model App.ViewModels.FornecedorViewModel
+@using App.Extensions
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = Model.Nome;
 }
 
-<h1>Details</h1>
-
 <div>
-    <h4>FornecedorViewModel</h4>
+    <h4>@ViewData["Title"]</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Nome)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Nome)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Documento)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Documento)
+        <dd class="col-sm-10">
+            @this.FormataDocumento(Model.TipoFornecedor, Model.Documento)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.TipoFornecedor)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TipoFornecedor)
-        </dd>
-        <dt class = "col-sm-2">
+      
+        <div class="col-sm-10">
+            <input disabled type="radio" value="1" asp-for="TipoFornecedor" checked="@(Model.TipoFornecedor == 1)" /> Pessoa Física
+            <input disabled type="radio" value="2" asp-for="TipoFornecedor" checked="@(Model.TipoFornecedor == 2)" /> Pessoa Jurídica
+        </div>
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Ativo)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Ativo)
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a class="btn btn-dark" asp-action="Edit" asp-route-id="@Model.Id">Editar</a>
+    <a class="btn btn-info"  href="javascript:window.history.back();">Voltar</a>
 </div>
+<partial  name="_DetalhesEndereco"/>
