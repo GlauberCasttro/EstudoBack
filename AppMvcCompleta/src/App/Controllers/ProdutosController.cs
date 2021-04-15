@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace App.Controllers
 {
+    [Route("produtos/")]
     public class ProdutosController : BaseController
     {
         private readonly IProdutoRepository _produtoRepository;
@@ -24,16 +25,17 @@ namespace App.Controllers
             _fornecedorRepository = fornecedorRepository;
         }
 
+        [Route("lista-produtos")]
         public async Task<IActionResult> Index(string nome)
         {
             if (!string.IsNullOrEmpty(nome))
             {
-               return  await ObterPorNome(nome);
+                return await ObterPorNome(nome);
             }
             return View(_mapper.Map<IEnumerable<ProdutoViewModel>>(await _produtoRepository.ObterProdutosFornecedores()));
         }
 
-        public async Task<IActionResult> ObterPorNome(string nome)
+        private async Task<IActionResult> ObterPorNome(string nome)
         {
             var result = _mapper.Map<IEnumerable<ProdutoViewModel>>(await _produtoRepository.ObterProdutoPorNome(nome));
 
@@ -43,6 +45,7 @@ namespace App.Controllers
             return View("Index", result);
         }
 
+        [Route("detalhes-produtos")]
         public async Task<IActionResult> Details(Guid id)
         {
             var produtoViewModel = await ObterProduto(id);
@@ -54,12 +57,14 @@ namespace App.Controllers
             return View(produtoViewModel);
         }
 
+        [Route("novo-produto")]
         public async Task<IActionResult> Create()
         {
             var produtoViewModel = await PopularFornecedores(new ProdutoViewModel());
             return View(produtoViewModel);
         }
 
+        [Route("novo-produto")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ProdutoViewModel produtoViewModel)
@@ -97,6 +102,7 @@ namespace App.Controllers
             return true;
         }
 
+        [Route("editar-produto/{id}")]
         public async Task<IActionResult> Edit(Guid id)
         {
             var produtoViewModel = await ObterProduto(id);
@@ -106,6 +112,7 @@ namespace App.Controllers
             return View(produtoViewModel);
         }
 
+        [Route("editar-produto/{id}")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, ProdutoViewModel produtoViewModel)
@@ -141,6 +148,7 @@ namespace App.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Route("excluir-produto/{id}")]
         public async Task<IActionResult> Delete(Guid id)
         {
             var produtoViewModel = await ObterProduto(id);
@@ -152,6 +160,7 @@ namespace App.Controllers
             return View(produtoViewModel);
         }
 
+        [Route("excluir-produto/{id}")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)

@@ -42,9 +42,44 @@
                 <td class="text-right">
                     <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id"><spam class="fa fa-search"></spam></a>
                     <a class="btn btn-warning" supress-by-claim-name="Fornecedor" supress-by-claim-value="Editar" asp-action="Edit" asp-route-id="@item.Id"><spam class="fa fa-pencil-alt"></spam></a>
-                    <a class="btn btn-danger" supress-by-claim-name="Fornecedor" supress-by-claim-value="Excluir" asp-action="Delete" asp-route-id="@item.Id"><spam class="fa fa-trash"></spam></a>
+                    <a class="btn btn-danger" supress-by-claim-name="Fornecedor" supress-by-claim-value="Excluir" asp-action="Delete" asp-route-id="@item.Id" data-modal=""><spam class="fa fa-trash"></spam></a>
+
                 </td>
             </tr>
+
         }
     </tbody>
 </table>
+<div id="myModalDelete" class="modal fade in">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div id="myModalContentDelete"></div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script>
+        $(document).ready(function () {
+            $(function () {
+                $.ajaxSetup({ cache: false });
+
+                $("a[data-modal]").on("click",
+                    function (e) {
+                        $('#myModalContentDelete').load(this.href,
+                            function () {
+                                $('#myModalDelete').modal({
+                                    keyboard: true
+                                },
+                                    'show');
+                            });
+                        return false;
+                    });
+            });
+        });
+    </script>
+
+}

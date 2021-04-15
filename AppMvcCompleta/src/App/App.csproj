@@ -28,6 +28,7 @@
 
   <ItemGroup>
     <Folder Include="Data\Migrations\" />
+    <Folder Include="NewFolder\" />
     <Folder Include="wwwroot\Imagens\" />
   </ItemGroup>
 

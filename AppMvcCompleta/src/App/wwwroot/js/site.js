@@ -47,6 +47,7 @@ function BuscaCep() {
 
         function limpa_formulário_cep() {
             // Limpa valores do formulário de cep.
+            $("#Endereco_Cep").val("");
             $("#Endereco_Logradouro").val("");
             $("#Endereco_Bairro").val("");
             $("#Endereco_Cidade").val("");
@@ -88,6 +89,7 @@ function BuscaCep() {
                             else {
                                 //CEP pesquisado não foi encontrado.
                                 limpa_formulário_cep();
+                                return false;
                                 alert("CEP não encontrado.");
                             }
                         });
