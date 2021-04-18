@@ -1,31 +1,42 @@
 ﻿using App.ViewModels;
 using AutoMapper;
+using DevIo.Business.Interfaces;
 using DevIo.Business.Interfaces.Repositories;
 using DevIo.Business.Models;
+using DevIo.Business.Notifications;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace App.Controllers
 {
     [Route("fornecedores/")]
-    public class FornecedoresController : Controller
+    public class FornecedoresController : BaseController
     {
         private readonly IFornecedorRepository _fornecedorRepository;
+        private readonly IFornecedorService _fornecedorService;
         private readonly IEnderecoRepository _enderecoRepository;
+        private readonly INotificador _notificador;
         private readonly IMapper _mapper;
 
-        public FornecedoresController(IFornecedorRepository fornecedorRepository, IMapper mapper, IEnderecoRepository enderecoRepository)
+        public FornecedoresController(IFornecedorRepository fornecedorRepository,
+            IMapper mapper,
+            IEnderecoRepository enderecoRepository,
+            IFornecedorService fornecedorService, INotificador notificador) : base(notificador)
         {
             _fornecedorRepository = fornecedorRepository;
             _mapper = mapper;
             _enderecoRepository = enderecoRepository;
+            _fornecedorService = fornecedorService;
+            _notificador = notificador;
         }
 
         [Route("lista-fornecedores")]
         public async Task<IActionResult> Index()
         {
+
             return View(_mapper.Map<IEnumerable<FornecedorViewModel>>(await _fornecedorRepository.ObterTodos()));
         }
 
@@ -58,8 +69,12 @@ namespace App.Controllers
                 return View(fornecedorViewModel);
             }
 
+            fornecedorViewModel.RemoveCaracteresDocumento();
             var fornecedor = _mapper.Map<Fornecedor>(fornecedorViewModel);
-            await _fornecedorRepository.Adicionar(fornecedor);
+            await _fornecedorService.Adicionar(fornecedor);
+
+            if (!OperacaoValida())
+                return View(fornecedorViewModel);
 
             return RedirectToAction(nameof(Index));
         }
@@ -87,8 +102,9 @@ namespace App.Controllers
             if (!ModelState.IsValid)
                 return View(fornecedorViewModel);
 
+            fornecedorViewModel.RemoveCaracteresDocumento();
             var fornecedor = _mapper.Map<Fornecedor>(fornecedorViewModel);
-            await _fornecedorRepository.Atualizar(fornecedor);
+            await _fornecedorService.Atualizar(fornecedor);
 
             return RedirectToAction(nameof(Index));
         }
@@ -113,17 +129,21 @@ namespace App.Controllers
                 return NotFound();
             }
 
-            var produtos = ObterFornecedorProdutosEndereco(id).Result;
-            if (produtos.Produtos != null)
+            await _fornecedorService.Remover(id);
+
+            if (!OperacaoValida())
             {
-                ViewBag["erroDelete"] = "Nao foi possivel excluir o produto.";
+                if (_notificador.TemNotificacao())
+                {
+                    foreach (var item in _notificador.ObterNotificacoes())
+                    {
+                        TempData["Erro"] += $"\n{item.Mensagem}";
+                    }
+                }
+
                 return RedirectToAction(nameof(Index));
             }
 
-            if (fornecedorViewModel.Endereco != null)
-                await _enderecoRepository.Remover(fornecedorViewModel.Endereco.Id);
-
-            await _fornecedorRepository.Remover(id);
             return RedirectToAction(nameof(Index));
         }
 
@@ -156,7 +176,7 @@ namespace App.Controllers
             ModelState.Remove("Documento");
             if (!ModelState.IsValid) return PartialView("_AtualizarEndereco", fornecedor);
 
-            await _enderecoRepository.Atualizar(_mapper.Map<Endereco>(fornecedor.Endereco));
+            await _fornecedorService.AtualizarEndereco(_mapper.Map<Fornecedor>(fornecedor));
 
             var url = Url.Action("ObterEndereco", "Fornecedores", new { id = fornecedor.Endereco.FornecedorId });
 

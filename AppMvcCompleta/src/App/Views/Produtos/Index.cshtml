@@ -7,11 +7,13 @@
 <h2>@ViewData["Title"]</h2>
 
 
+<vc:summary></vc:summary>
 <nav class="navbar navbar-light bg-light">
-    
+
+
     <form asp-action="Index" asp-route-id="" class="form-inline">
-        <div style="padding-right:5px" >
-            <a  class="btn btn-info" asp-action="Create">Novo Produto</a>
+        <div style="padding-right:5px">
+            <a class="btn btn-info" asp-action="Create">Novo Produto</a>
         </div>
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
         <input class="form-control mr-sm-2" type="search" name="nome" placeholder="Digite um nome..." aria-label="Pesquisar">
@@ -19,4 +21,4 @@
     </form>
 </nav>
 
-<partial name="_ListaProdutos"/>
+<partial name="_ListaProdutos" />

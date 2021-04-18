@@ -5,12 +5,15 @@
 }
 
 <h4 style="padding-top:50px">@ViewData["Title"]</h4>
-<hr />
-<div class="row">
-    <div class="col-md-9">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
+<div class="row">
+
+    <div class="col-md-9">
+        <hr />
+        <form asp-action="Create">
+            @*<div asp-validation-summary="All" class="text-danger"></div>*@
+
+            <vc:summary></vc:summary>
             <div class="form-group">
                 <label asp-for="Nome" class="control-label"></label>
                 <input asp-for="Nome" class="form-control" />
@@ -23,7 +26,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="TipoFornecedor" class="control-label"></label><br />
-                <input type="radio" value="1" asp-for="TipoFornecedor"  checked /> Pessoa Física
+                <input type="radio" value="1" asp-for="TipoFornecedor" checked /> Pessoa Física
                 <input type="radio" value="2" asp-for="TipoFornecedor" checked /> Pessoa Jurídica
                 <span asp-validation-for="TipoFornecedor" class="text-danger"></span>
             </div>
@@ -34,8 +37,9 @@
                 </label>
             </div>
 
-            <h4>Endereço</h4>
             <hr />
+            <h4>Endereço</h4>
+
             <partial name="_Endereco" />
 
             <div class="form-group">
@@ -52,18 +56,18 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 
-<script>
-    var teste = BuscaCep();
-    if (!teste) {
-        $(document).ready(function () {
-            $('a.link-alerta').m2brDialog({
-                largura: '300',
-                altura: '120',
-                tipo: 'alerta',
-                titulo: 'TESTE',
-                texto: 'Teste m2brDialog'
+    <script>
+        var teste = BuscaCep();
+        if (!teste) {
+            $(document).ready(function () {
+                $('a.link-alerta').m2brDialog({
+                    largura: '300',
+                    altura: '120',
+                    tipo: 'alerta',
+                    titulo: 'TESTE',
+                    texto: 'Teste m2brDialog'
+                });
             });
-        });
-    }
-</script>
+        }
+    </script>
 }

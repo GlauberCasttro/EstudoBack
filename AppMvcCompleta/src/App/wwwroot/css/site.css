@@ -76,4 +76,7 @@ input, select, filter, textarea,label {
 /*input, td,select{
     text-transform: uppercase
 }*/
+#alert {
+    animation: hide 2s 2s forwards;
+}
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Text.RegularExpressions;
 
 namespace App.ViewModels
 {
@@ -27,5 +28,11 @@ namespace App.ViewModels
         public bool Ativo { get; set; }
 
         public IEnumerable<ProdutoViewModel> Produtos { get; set; }
+
+        public void RemoveCaracteresDocumento()
+        {
+            if (!string.IsNullOrWhiteSpace(Documento))
+               Documento =  Regex.Replace(Documento, "[^0-9]+", "");
+        }
     }
 }

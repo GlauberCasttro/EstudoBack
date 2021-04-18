@@ -88,9 +88,10 @@ function BuscaCep() {
                             } //end if.
                             else {
                                 //CEP pesquisado não foi encontrado.
+                                alert("CEP não encontrado.");
                                 limpa_formulário_cep();
                                 return false;
-                                alert("CEP não encontrado.");
+                               
                             }
                         });
                 } //end if.
@@ -109,5 +110,5 @@ function BuscaCep() {
 }
 
 $(document).ready(function () {
-    $("#msg_box").fadeOut(2500);
+    $(".msg_box").fadeOut(3000);
 });

@@ -27,7 +27,9 @@ namespace DevIo.Data.Repository
             return await _context.Fornecedores
                 .Include(e => e.Produtos)
                  .Include(ed => ed.Endereco)
-                .Where(e => e.Id == id).FirstOrDefaultAsync();
+                .Where(e => e.Id == id)
+                .AsNoTracking()
+                .FirstOrDefaultAsync();
         }
     }
 }

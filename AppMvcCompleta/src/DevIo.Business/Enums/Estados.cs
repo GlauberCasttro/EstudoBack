@@ -11,7 +11,7 @@ namespace DevIo.Business.Enums
         SP,
         [Display(Name = "Rio de Janeiro")]
         RJ,
-        [Display(Name = "Minas Gerais")]
+        [Display(Name = "MG")]
         MG,
         [Display(Name = "Paraná")]
         PR,
