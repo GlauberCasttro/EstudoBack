@@ -31,13 +31,13 @@
 }
 
 @if (TempData["Erro"] != null)
-{
-    <div style="padding-top: 15px"></div>
+    {
+        <div style="padding-top: 15px"></div>
 
-    <div class="alert alert-danger msg_box">
-        <button type="button" class="close" data-dismiss="alert">×</button>
-        <h4 id="msgRetorno">@Html.Raw(TempData["Erro"].ToString())</h4>
-    </div>
-}
+        <div class="alert alert-danger msg_box_erro">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <h6 id="msgRetorno">@Html.Raw(TempData["Erro"].ToString())</h6>
+        </div>
+    }
 
 

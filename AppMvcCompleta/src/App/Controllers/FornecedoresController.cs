@@ -137,11 +137,9 @@ namespace App.Controllers
                 {
                     foreach (var item in _notificador.ObterNotificacoes())
                     {
-                        TempData["Erro"] += $"\n{item.Mensagem}";
+                        TempData["Erro"] = item.Mensagem;
                     }
                 }
-
-                return RedirectToAction(nameof(Index));
             }
 
             return RedirectToAction(nameof(Index));
