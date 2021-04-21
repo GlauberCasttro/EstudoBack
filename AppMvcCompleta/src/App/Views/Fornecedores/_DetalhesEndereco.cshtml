@@ -59,6 +59,7 @@
                     @Html.DisplayFor(model => model.Endereco.Estado)
                 </td>
                 <td>
+                    @**supress-by-action é uma taghelper que esconde um elemento*@
                     <a supress-by-action="Edit,ObterEndereco" asp-action="AtualizarEndereco" asp-route-id="@Model.Id" class="btn btn-info" data-modal="">
                         <span title="Editar" class="fa fa-pencil-alt"></span>
                     </a>
@@ -68,6 +69,9 @@
     }
 
 </div>
+<script>
+    SetModal();
+</script>
 
 
 

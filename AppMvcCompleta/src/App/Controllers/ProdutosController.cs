@@ -1,9 +1,11 @@
-﻿using App.ViewModels;
+﻿using App.Extensions;
+using App.ViewModels;
 using AutoMapper;
 using DevIo.Business.Interfaces;
 using DevIo.Business.Interfaces.Repositories;
 using DevIo.Business.Models;
 using DevIo.Business.Notifications;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -30,13 +32,16 @@ namespace App.Controllers
         }
 
         [Route("lista-produtos")]
+        [ClaimsAuthorize("Produtos", "Consultar")]
         public async Task<IActionResult> Index(string nome)
         {
             if (!string.IsNullOrEmpty(nome))
             {
                 return await ObterPorNome(nome);
             }
-            return View(_mapper.Map<IEnumerable<ProdutoViewModel>>(await _produtoRepository.ObterProdutosFornecedores()));
+
+            return StatusCode(404);
+            //return View(_mapper.Map<IEnumerable<ProdutoViewModel>>(await _produtoRepository.ObterProdutosFornecedores()));
         }
 
         private async Task<IActionResult> ObterPorNome(string nome)
@@ -50,6 +55,7 @@ namespace App.Controllers
         }
 
         [Route("detalhes-produtos")]
+        [ClaimsAuthorize("Produtos", "Consultar")]
         public async Task<IActionResult> Details(Guid id)
         {
             var produtoViewModel = await ObterProduto(id);
@@ -62,6 +68,7 @@ namespace App.Controllers
         }
 
         [Route("novo-produto")]
+        [ClaimsAuthorize("Produtos", "Gravar")]
         public async Task<IActionResult> Create()
         {
             var produtoViewModel = await PopularFornecedores(new ProdutoViewModel());
@@ -70,6 +77,7 @@ namespace App.Controllers
 
         [Route("novo-produto")]
         [HttpPost]
+        [ClaimsAuthorize("Produtos", "Gravar")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ProdutoViewModel produtoViewModel)
         {
@@ -110,6 +118,7 @@ namespace App.Controllers
         }
 
         [Route("editar-produto/{id}")]
+        [ClaimsAuthorize("Produtos", "Editar")]
         public async Task<IActionResult> Edit(Guid id)
         {
             var produtoViewModel = await ObterProduto(id);
@@ -122,6 +131,7 @@ namespace App.Controllers
         [Route("editar-produto/{id}")]
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [ClaimsAuthorize("Produtos", "Editar")]
         public async Task<IActionResult> Edit(Guid id, ProdutoViewModel produtoViewModel)
         {
             if (id != produtoViewModel.Id)
@@ -159,6 +169,7 @@ namespace App.Controllers
         }
 
         [Route("excluir-produto/{id}")]
+        [ClaimsAuthorize("Produtos", "Excluir")]
         public async Task<IActionResult> Delete(Guid id)
         {
             var produtoViewModel = await ObterProduto(id);
@@ -171,6 +182,7 @@ namespace App.Controllers
         }
 
         [Route("excluir-produto/{id}")]
+        [ClaimsAuthorize("Produtos", "Excluir")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)

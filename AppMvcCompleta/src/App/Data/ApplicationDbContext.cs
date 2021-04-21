@@ -10,7 +10,7 @@ namespace App.Data
             : base(options)
         {
         }
-        public DbSet<App.ViewModels.ProdutoViewModel> ProdutoViewModel { get; set; }
-        public DbSet<App.ViewModels.EnderecoViewModel> EnderecoViewModel { get; set; }
+        //public DbSet<App.ViewModels.ProdutoViewModel> ProdutoViewModel { get; set; }
+        //public DbSet<App.ViewModels.EnderecoViewModel> EnderecoViewModel { get; set; }
     }
 }

@@ -1,10 +1,10 @@
 ﻿@model App.ViewModels.FornecedorViewModel
 
 @{
-    ViewData["Title"] = "Editar Fornecedor";
+    ViewData["Title"] = "Fornecedor";
 }
 
-<h1>@ViewData["Title"]</h1>
+<h4 style="padding-top:50px">@ViewData["Title"]</h4>
 
 <hr />
 
@@ -48,15 +48,16 @@
 
     <div class="form-group">
         <input type="submit" value="Salvar" class="btn btn-primary" />
+        <a class="btn btn-info" href="javascript:window.history.back();">Voltar</a>
     </div>
 </form>
 
 @*@if (Model.Endereco != null)
-{
-    <div id="EnderecoTarget">
-        <partial name="_DetalhesEndereco" />
-    </div>
-}*@
+    {
+        <div id="EnderecoTarget">
+            <partial name="_DetalhesEndereco" />
+        </div>
+    }*@
 
 <div id="EnderecoTarget">
     <partial name="_DetalhesEndereco" />
