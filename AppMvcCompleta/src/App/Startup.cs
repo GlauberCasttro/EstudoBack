@@ -54,7 +54,7 @@ namespace App
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
+            if (!env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();

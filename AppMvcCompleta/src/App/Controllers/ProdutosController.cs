@@ -5,7 +5,6 @@ using DevIo.Business.Interfaces;
 using DevIo.Business.Interfaces.Repositories;
 using DevIo.Business.Models;
 using DevIo.Business.Notifications;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -15,7 +14,6 @@ using System.Threading.Tasks;
 
 namespace App.Controllers
 {
-    [Route("produtos/")]
     public class ProdutosController : BaseController
     {
         private readonly IProdutoRepository _produtoRepository;
@@ -40,8 +38,7 @@ namespace App.Controllers
                 return await ObterPorNome(nome);
             }
 
-            return StatusCode(404);
-            //return View(_mapper.Map<IEnumerable<ProdutoViewModel>>(await _produtoRepository.ObterProdutosFornecedores()));
+            return View(_mapper.Map<IEnumerable<ProdutoViewModel>>(await _produtoRepository.ObterProdutosFornecedores()));
         }
 
         private async Task<IActionResult> ObterPorNome(string nome)
@@ -130,7 +127,7 @@ namespace App.Controllers
 
         [Route("editar-produto/{id}")]
         [HttpPost]
-        [ValidateAntiForgeryToken]
+       [ValidateAntiForgeryToken]
         [ClaimsAuthorize("Produtos", "Editar")]
         public async Task<IActionResult> Edit(Guid id, ProdutoViewModel produtoViewModel)
         {
@@ -184,7 +181,7 @@ namespace App.Controllers
         [Route("excluir-produto/{id}")]
         [ClaimsAuthorize("Produtos", "Excluir")]
         [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken]//Pode remover quando se tem configurado nas configurtions startups
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
             var produtoViewModel = ObterProduto(id);

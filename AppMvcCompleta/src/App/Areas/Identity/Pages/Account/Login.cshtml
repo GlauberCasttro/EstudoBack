@@ -1,0 +1,78 @@
+﻿@page
+@model LoginModel
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/lib/font-awesome/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/login.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div  class="form wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+            <!-- Icon -->
+            @*<div class="fadeIn first">
+                <img src="" id="icon" alt="User Icon" />
+            </div>*@
+
+            <!-- Login Form -->
+            <form class="form"style="padding-top:50px" method="post">
+                <h4>Entre com seus dados para acessar!!!</h4>
+                <hr />
+                <div asp-validation-summary="All" class="text-danger"></div>
+
+                <div style="margin:30px; text-align:left; font-weight:bold" class="form-group">
+                    <label asp-for="Input.Email"></label>
+                    <input asp-for="Input.Email" class="form-control" />
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                <div style="margin:30px; text-align:left;font-weight:bold" class="form-group">
+                    <label  asp-for="Input.Password"></label>
+                    <input asp-for="Input.Password" class="form-control" />
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label asp-for="Input.RememberMe">
+                            <input asp-for="Input.RememberMe" />
+                            @Html.DisplayNameFor(m => m.Input.RememberMe)
+                        </label>
+                    </div>
+                </div>
+                <div style="padding:10px" class="form-group">
+                    <button style="text-align:center"type="submit" class="btn btn-primary btn-block">Entrar</button>
+                    @*<button asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl" class="btn btn-info">Registre-se</button>*@
+                </div>
+                <div class="form-group">
+                </div>
+
+            </form>
+
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <p>
+                    <a id="forgot-password" asp-page="./ForgotPassword">Esqueceu sua Senha?</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+</body>
+</html>

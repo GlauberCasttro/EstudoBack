@@ -61,7 +61,7 @@ namespace App.Extensions
             if (output == null)
                 throw new ArgumentNullException(nameof(output));
 
-            var action = _contextAccessor.HttpContext.GetRouteData().Values["action"].ToString(); //pegando uma action dentro do request
+            var action = _contextAccessor.HttpContext.GetRouteData()?.Values["action"]?.ToString(); //pegando uma action dentro do request
 
             if (ActionName.Contains(action)) return;
 

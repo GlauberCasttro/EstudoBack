@@ -1,4 +1,8 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.AspNetCore.Server.IIS;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace App.Configurations
 {
@@ -9,6 +13,7 @@ namespace App.Configurations
     {
         public static IServiceCollection AddMvcConfiguration(this IServiceCollection services)
         {
+           
             services.AddMvc(o =>
             {
                 o.ModelBindingMessageProvider.SetAttemptedValueIsInvalidAccessor((x, y) => "O valor preenchido é inválido para este campo.");
@@ -22,6 +27,10 @@ namespace App.Configurations
                 o.ModelBindingMessageProvider.SetValueIsInvalidAccessor(x => "O valor preenchido é inválido para este campo.");
                 o.ModelBindingMessageProvider.SetValueMustBeANumberAccessor(x => "O campo deve ser numérico.");
                 o.ModelBindingMessageProvider.SetValueMustNotBeNullAccessor(x => "Este campo precisa ser preenchido.");
+                //o.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
+
+                     var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+                o.Filters.Add(new AuthorizeFilter(policy));//Adicionando um filter para abrir a url de login como principal
             }).SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0);
             return services;
         }
